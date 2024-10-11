@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;;
+}
+
+.header{
+  width: 100%;
+  height: 50px;
+  background-color:#ffffff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  z-index: 1;
+}
+
+.container__header{
+  width: 1250px;
+  height: 100%;
+  display: flex;
+  /* background-color: orange; */
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.headerIzquierda{
+  display: flex;
+  height: 100%;
+  width: 380px;
+  /* background-color: white; */
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.headerIzquierda__logo{
+  width: 35px;
+  height: 35px;
+}
+
+.headerIzquierda__formulario{
+  display: flex;
+}
+
+.headerIzquierda__lupa{
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  height: 33px;
+  width: 32px;
+  background-color: white;
+  text-align: center;
+  align-content: center;
+  border-radius: 8px 0 0 8px;
+  background-color: #edf3f8;
+}
+
+.headerIzquierda__buscador{
+  height: 33px;
+  width: 280px;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  outline: none;
+  background-color: #edf3f8;
+  /* font-size: 15px; */
+  align-content: center;
+}
+
+.headerDerecha{
+  height: 100%;
+  width: 450px;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+}
+
+.headerDerecha__opciones{
+  width: min-content;
+  height: 100%;
+  display: flex;
+  gap: 1px;
+  /* justify-content:space-evenly; */
+}
+
+.headerDerecha__opcion{
+  display: flex;
+  padding: 0 10px;
+  flex-direction: column;
+  height: 100%;
+  min-width: 85px;
+  width: min-content;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  text-align: center;
+  white-space:nowrap;
+  color: #5f5f5f;
+  transition: 0.1s;
+}
+
+.headerDerecha__opcion:hover{
+  border-bottom: solid 3px black;
+}
+
+.headerDerecha__texto{
+  font-size: 14px;
+}
+
+.headerDerecha__perfil{
+  position: relative;
+}
+
+.headerDerecha__fotoPerfil{
+  width:30px ;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.headerDerecha__PuntoVerde{
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: green;
+  border: solid 2px white;
+  border-radius: 50%;
+  top: 0px;
+  right: 0px;
+}
+
+
+.contenedor{
+  padding-top: 60px;
+  display: grid;
+  height: 100vh;
+  max-width: 1200px;
+  grid-template-columns: 280px 1fr 280px;
+  grid-area: 'sidebarIzquierda contenido sidebarDerecha';
+  margin: 0 auto;
+  gap: 20px;
+  /* margin-top: 20px; */
+}
+
+.sidebarIzquierda{
+  grid-area: "sidebarIzquierda";
+  background-color: rebeccapurple;
+}
+
+.sidebarIzquierda__infoPerfil{
+    position: relative;
+}
+
+.sidebarIzquierda__imgPortada{
+  width: 100%;
+  object-fit: cover;
+  height: 85px;
+}
+
+.sidebarIzquierda__info{
+  width: 100%;
+  height: 300px;
+  background-color: red;
+  padding-top: 55px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.sidebarIzquierda__fotoPerfil{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border: solid 5px white;
+  border-radius: 50%;
+  right: 160px;
+  top: 50px;
+}
+
+.sidebarIzquierda__nombre{
+  font-size:1.2rem;
+}
+
+.sidebarIzquierda__profesion{
+  font-size: 0.9rem;
+}
+
+.sidebarIzquierda__estadiPublicaciones{
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
