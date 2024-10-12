@@ -8,6 +8,10 @@
   font-family: "Poppins", sans-serif;;
 }
 
+.linkedin{
+  background-color: #f4f2ee;
+}
+
 .header{
   width: 100%;
   height: 50px;
@@ -134,13 +138,12 @@
   padding-top: 60px;
   display: grid;
   height: 100%;
-  max-width: 1200px;
+  width: 1200px;
   grid-template-columns: 280px 1fr 280px;
   grid-area: 'sidebarIzquierda contenido sidebarDerecha';
   margin: 0 auto;
   gap: 20px;
   /* margin-top: 20px; */
-  background-color: #f4f2ee;
 }
 
 .sidebarIzquierda{
@@ -316,4 +319,85 @@
 .Interacciones__botonBajoTex:hover{
   background-color: #edf3f8;
 }
+/* ----------------------------------------CONTENIDO--------------------------------------- */
 
+.contenido{
+  grid-area:"contenido";
+  background-color: brown;
+}
+
+.nuevasPublicaciones{
+  min-height: max-content;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.nuevasPublicaciones__escribir{
+  display: flex;
+  max-width: 100%;
+  min-height: 75px;
+  align-items: center;
+  padding: 20px 20px 15px 20px;
+}
+
+.nuevasPublicaciones__fotoPerfil{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.nuevasPublicaciones__escribirPost{
+  height: calc(75px - 10px);
+  width: 100%;
+  border: none;
+  padding: 5px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.nuevasPublicaciones__botones{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-top: solid 1px black;
+}
+
+.nuevasPublicaciones__boton{
+  display: flex;
+  height: 100%;
+  width: calc(100%/4);
+  /* background-color: #ea9900; */
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nuevasPublicaciones__separadorBotones{
+  border: solid 1px black;
+  height: 100%;
+}
+
+.nuevasPublicaciones__iconos{
+  color: #2874b1;
+  font-size: 22px;
+  margin-right: 5px;
+}
+
+.nuevasPublicaciones__textBoton{
+  color: #222;
+}
+
+.nuevasPublicaciones__botonPost{
+  background-color: #2874b1  ;
+  transition: 1s;
+}
+.nuevasPublicaciones__botonPost:hover{
+  background-color: #cccccc;
+}
+
+.nuevasPublicaciones__textBotonPost{
+  color: white;
+}
