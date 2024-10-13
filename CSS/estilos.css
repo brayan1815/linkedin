@@ -323,7 +323,7 @@
 
 .contenido{
   grid-area:"contenido";
-  background-color: brown;
+  /* background-color: brown; */
 }
 
 .nuevasPublicaciones{
@@ -400,4 +400,164 @@
 
 .nuevasPublicaciones__textBotonPost{
   color: white;
+}
+
+.separasion{
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.separasion__linea{
+  width: 78%;
+  border: solid black 1px;
+  height: 1px;
+  margin-right: 10px;
+}
+
+.separasion__texNegrita{
+  font-weight: 500;
+}
+
+.separasion__flecha{
+  font-size: 30px;
+}
+
+.publicacion{
+  padding: 25px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.publicacion__informacion{
+  display: flex;
+  height: min-content;
+  width: 100%;
+  align-items: center;
+}
+
+.publicacion__info{
+  color:#747674 ;
+}
+
+.publicacion__fotoPerfil{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.publicacion__nombre{
+  font-size: 22px;
+  font-weight: 600;
+  height: min-content;
+  color: black;
+}
+
+.publicacion__separacionProfesiones{
+  margin: 0 5px;
+  border: solid black 1px;
+  height: 15px;
+}
+
+.publicacion__profesion{
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+}
+
+.publicacion__hora{
+  font-size: 15px;
+}
+
+.publicacion__parrafo{
+  margin: 10px 0;
+  color: #747674;
+}
+
+.publicacion__imagen{
+  width: 100%;
+  height: 380px;
+}
+
+.publicacion__interacciones{
+  font-size: 14px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3px 0;
+  color: #a4a4a4;
+}
+
+.Interacciones__izqui{
+  display: flex;
+  align-items: center;
+}
+
+.Interacciones__derecha{
+  display: flex;
+  align-items: center;
+}
+
+.Interacciones__punto{
+  height: 2px;
+  width: 2px;
+  border-radius: 50%;
+  background-color: black;
+  margin: 0 3px;
+}
+
+.Interacciones__iconolike{
+  color: #9a9a9a;
+}
+.Interacciones__iconocora{
+  color: #d37659;
+  margin: 0 2px;
+}
+
+.Interacciones__iconomano{
+  color: #7ca858;
+}
+
+.Interacciones__texIzquierda{
+  margin-left: 2px;
+}
+
+.separacionInteracBoton{
+  border: solid 1px black;
+}
+
+.publicacion__fotoPerfilFlecha{
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  min-width: 30px;
+}
+
+.publicacion__miFotoPerfil{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.publicacion__Botones{
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+}
+
+.publicacion__boton{
+  text-decoration: none;
+  font-size: 17px;
+  color: #a4a4a4;
+  font-weight: 500;
+}
+
+.publicacion__iconoBoton{
+  font-size: 20px;
+  font-weight: 100;
+  color: #a4a4a4;
 }
