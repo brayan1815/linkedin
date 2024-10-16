@@ -10,7 +10,8 @@
 
 .linkedin{
   background-color: #f4f2ee;
-
+  width: 100%;
+  overflow-x:hidden ;
 }
 
 .header{
@@ -19,7 +20,7 @@
   background-color:#ffffff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
 
 .container__header{
@@ -125,6 +126,7 @@
   width:30px ;
   height: 30px;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .headerDerecha__PuntoVerde{
@@ -162,8 +164,8 @@
 }
 
 .sidebarIzquierda__imgPortada{
+  display: block;
   width: 100%;
-  object-fit: cover;
   height: 85px;
 }
 
@@ -183,7 +185,7 @@
   border: solid 5px white;
   border-radius: 50%;
   right: 160px;
-  top: 50px;
+  top: 13%;
 }
 
 .sidebarIzquierda__nombre{
@@ -715,6 +717,81 @@
   top: 70px;
 }
 
+.manuPerfil{
+  width: 300px;
+  height: min-content;
+  background-color: black;
+  position: fixed;
+  z-index: 1;
+  right: 8%;
+  padding: 20px;
+  margin: 25px;
+  display: none;
+}
+
+.botdespleper:checked + .manuPerfil{
+  display: block;
+}
+
+.menuPerfil__nombreFoto{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.menuPerfil__foto{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.menuPerfil__nombre{
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.menuPerfil__pagPerfil{
+  font-size: 13px;
+  text-decoration: none;
+  color: #a4d5f8;
+}
+
+.manuPerfil__opcion{
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menuPerfil__contIc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #e4e6eb;
+  margin-right: 13px;
+  font-size: 20px;
+  color: #525252;
+}
+
+.menuPerfil__logoText{
+  display: flex;
+  align-items: center;
+}
+
+.menuPerfil__textOpc{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.menuPerfil__flecha{
+  color:#e4e6eb ;
+}
+
 
 @media(max-width:1100px){
   .sidebarDerecha{
@@ -754,13 +831,28 @@
     transform: 1s;
   }
   .contenedor{
-    width: 25px;
     justify-content: center;
-    grid-template-columns: 90%;
+    grid-template-columns: 1fr;
     grid-template-rows: max-content max-content;
     grid-area: 'sidebarIzquierda'
                'contenido';
     padding-left: 20px;
     padding-right: 20px;
+    min-width: 100%;
   }
+  
+  .sidebarIzquierda__fotoPerfil{
+    left: 20px;
+    top: 13%;
+  }
+  
+  .sidebarIzquierda__imgPortada{
+    min-height: 30%;
+  }
+
+
+  /* .sidebarIzquierda{
+    max-width: 90%;
+    min-width: min-content;
+  } */
 }
