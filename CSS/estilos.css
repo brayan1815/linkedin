@@ -24,7 +24,7 @@
 }
 
 .container__header{
-  max-width: 85%;
+  width: 90%;
   padding: 0 10px;
   height: 100%;
   display: flex;
@@ -39,17 +39,17 @@
   width: 380px;
   /* background-color: white; */
   align-items: center;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
 }
 
 .headerIzquierda__logo{
   width: 35px;
   height: 35px;
+  margin-right: 10px;
 }
 
 .headerIzquierda__formulario{
   display: flex;
-  min-width: none;
 }
 
 .headerIzquierda__lupa{
@@ -75,12 +75,12 @@
   background-color: #edf3f8;
   /* font-size: 15px; */
   align-content: center;
-  max-width: 300px;
+  width: 250px;
 }
 
 .headerDerecha{
   height: 100%;
-  width: 450px;
+  width: min-content;
   /* background-color: blue; */
   display: flex;
   align-items: center;
@@ -120,6 +120,8 @@
 
 .headerDerecha__perfil{
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .headerDerecha__fotoPerfil{
@@ -136,7 +138,7 @@
   background-color: green;
   border: solid 2px white;
   border-radius: 50%;
-  top: 0px;
+  top: 3px;
   right: 0px;
 }
 

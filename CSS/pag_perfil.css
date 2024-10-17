@@ -1,0 +1,40 @@
+@import url(estilos.css);
+
+.headerDerecha{
+    width: min-content;
+}
+
+.containerGridPerfil{
+    background-color: red;
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    margin: 0 auto;
+    padding-top: 70px;
+    grid-area: 'contenidoPerfil sidebarPerfilDerecha ';
+    gap: 20px;
+}
+
+.linkedinPerfil{
+    width: 100%;
+    height: 100vh;
+    background-color: #f4f2ee;
+}
+
+.contenidoPerfil{
+    background-color: green;
+    grid-area: "contenidoPerfil";
+    height: 350px;
+    width: 100%;
+}
+
+.perfilinfor__fotoPortada{
+    width: 100%;
+    min-height: 10%;
+}
+
+.imageeeeeeeeeeeeeeee{
+    width: 100%;
+    height: 100%;
+}
