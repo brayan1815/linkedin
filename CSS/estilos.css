@@ -25,6 +25,7 @@
 
 .container__header{
   width: 90%;
+  max-width: 1200px;
   padding: 0 10px;
   height: 100%;
   display: flex;
@@ -148,6 +149,7 @@
   display: grid;
   height: 100%;
   width: 90%;
+  max-width: 1200px;
   grid-template-columns: 280px 1fr 280px;
   grid-area: 'sidebarIzquierda contenido sidebarDerecha';
   margin: 0 auto;
