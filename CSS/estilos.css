@@ -170,7 +170,7 @@
 .sidebarIzquierda__imgPortada{
   display: block;
   width: 100%;
-  height: 85px;
+  /* height: 85px; */
 }
 
 .sidebarIzquierda__info{
@@ -180,16 +180,19 @@
   padding-top: 55px;
   padding-left: 25px;
   padding-right: 25px;
+  margin-top: -20px;
+  margin-bottom: 30px;
 }
 
 .sidebarIzquierda__fotoPerfil{
-  position: absolute;
+  /* position: absolute; */
   width: 90px;
   height: 90px;
   border: solid 5px white;
   border-radius: 50%;
-  right: 160px;
-  top: 13%;
+  /* right: 160px;
+  top: 13%; */
+  margin-top: -365px;
 }
 
 .sidebarIzquierda__nombre{
@@ -724,7 +727,7 @@
 .manuPerfil{
   width: 300px;
   height: min-content;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.897);
   position: fixed;
   z-index: 1;
   right: 8%;
@@ -849,14 +852,6 @@
     left: 20px;
     top: 13%;
   }
-  
-  .sidebarIzquierda__imgPortada{
-    min-height: 30%;
-  }
 
 
-  /* .sidebarIzquierda{
-    max-width: 90%;
-    min-width: min-content;
-  } */
 }
