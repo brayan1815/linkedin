@@ -36,7 +36,10 @@
 .sidebarPerfilDerecha{
     grid-area: "sidebarPerfilDerecha";
     height: 100%;
-    background-color: red;
+    width: 100%;
+    /* background-color: red; */
+    position: sticky;
+    top: 70px;
 }
 
 .personasConozcas{
@@ -45,6 +48,8 @@
     height: max-content;
     background-color: #ffffff;
     color: #5f5f5f;
+    position: sticky;
+    top: 350px;
 }
 
 .tituloPersonasConozcas{
@@ -341,4 +346,27 @@
   background-color: #e4e6eb;
   color: #5f5f5f;
   margin: 0 5px;
+}
+
+@media(max-width:770px){
+  /* .sidebarPerfilDerecha{
+    display: none;
+  } */
+
+  .containerGridPerfil{
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content;
+    grid-area: 'contenidoPerfil'
+               'sidebarPerfilDerecha';
+    min-height: 100%;
+  }
+
+  .sidebarPerfilDerecha{
+    grid-area: "sidebarPerfilDerecha";
+  }
+
+  .estatico{
+    position: static;
+  }
+  
 }
