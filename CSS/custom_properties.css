@@ -1,0 +1,13 @@
+:root{
+    --color_fondo_apartados:#ffffff;
+    --color_princip_textos:#5f5f5f;
+    --color_icono_interacciones:#2874b1;
+    --padding_apartados:35px;
+    --tamaño_fotoPerfil_grande:135px;
+    --tamaño_fotoPerfil_publicaciones:40px;
+    --tamaño_nombre_publicacor:22px;
+    --ancho_sidebar:280px;
+    --ancho_max_contenedor:1200px;
+    --tamaño_fotos_perfil:35px;
+    --tamaño_logoUni_experiencia:55px;
+}

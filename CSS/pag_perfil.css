@@ -1,4 +1,6 @@
 @import url(estilos.css);
+@import url(custom_properties.css);
+
 
 .headerDerecha{
     width: min-content;
@@ -22,7 +24,6 @@
 }
 
 .contenidoPerfil{
-    /* background-color: green; */
     grid-area: "contenidoPerfil";
     height: 100%;
     width: 100%;
@@ -37,7 +38,6 @@
     grid-area: "sidebarPerfilDerecha";
     height: 100%;
     width: 100%;
-    /* background-color: red; */
     position: sticky;
     top: 70px;
 }
@@ -46,8 +46,8 @@
     width: 100%;
     padding: 20px;
     height: max-content;
-    background-color: #ffffff;
-    color: #5f5f5f;
+    background-color: var(--color_fondo_apartados);
+    color: var(--color_princip_textos);
     position: sticky;
     top: 350px;
 }
@@ -80,14 +80,14 @@
     display: flex;
     margin-left: 42px;
     text-decoration: none;
-    border: solid #5f5f5f 1px;
+    border: solid var(--color_princip_textos) 1px;
     width: 100px;
     border-radius: 15px;
     font-size: 12px;
     height: 27px;
     align-items: center;
     justify-content: center;
-    color: #5f5f5f;
+    color: var(--color_princip_textos);
 }
 
 .personasConozcas__nombre{
@@ -96,7 +96,7 @@
 
 .MiInfoPerfil{
   height: max-content;
-  background-color: #ffffff;
+  background-color: var(--color_fondo_apartados);
   width: 100%;
   margin-bottom: 10px;
 }
@@ -106,13 +106,13 @@
 }
 
 .MiInfoPerfil__informacion{
-  padding: 0px 35px 0 35px;
+  padding: 0px var(--padding_apartados) 0 var(--padding_apartados);
   margin-top: -70px;
 }
 
 .MiInfoPerfil__fotPerfil{
-  height: 135px;
-  width: 135px;
+  height: var(--tamaño_fotoPerfil_grande);
+  width: var(--tamaño_fotoPerfil_grande);
   border-radius: 50%;
   border: solid 6px white;
 }
@@ -126,12 +126,12 @@
   display: flex;
   align-items: center;
   margin-bottom: 3px;
-  color: #5f5f5f;
+  color: var(--color_princip_textos);
   font-weight: 500;
 }
 
 .MiInfoPerfil__separaciontitulos{
-  border: solid 1px #5f5f5f;
+  border: solid 1px var(--color_princip_textos);
   height: 13px;
   margin: 0 5px ;
 }
@@ -139,7 +139,7 @@
 .MiInfoPerfil__residenciaContact{
   display: flex;
   align-items: center;
-  color: #5f5f5f;
+  color: var(--color_princip_textos);
 }
 
 .MiInfoPerfil__separacionResidenContac{
@@ -158,12 +158,12 @@
   display: flex;
   align-items: center;
   margin-bottom: 15px;
-  color: #5f5f5f;
+  color: var(--color_princip_textos);
 }
 
 .conexionesMutuas__fotoPerfil{
-  width: 35px;
-  height: 35px;
+  width: var(--tamaño_fotos_perfil);
+  height: var(--tamaño_fotos_perfil);
   border-radius: 50%;
   margin-right: 5px;
 }
@@ -208,9 +208,9 @@
 .about{
   width: 100%;
   height: min-content;
-  background-color: white;
-  padding: 35px;
-  color:#5f5f5f;
+  background-color: var(--color_fondo_apartados);
+  padding: var(--padding_apartados);
+  color:var(--color_princip_textos);
   margin-bottom: 10px;
 }
 
@@ -227,15 +227,15 @@
 .experiencia{
   width: 100%;
   height: min-content;
-  background-color: white;
-  padding: 35px;
+  background-color: var(--color_fondo_apartados);
+  padding: var(--padding_apartados);
   margin-bottom: 10px;
 }
 
 .ExperienciaItem__logo,
 .Estudios__LogoUni{
-  width: 55px;
-  height: 55px;
+  width: var(--tamaño_logoUni_experiencia);
+  height: var(--tamaño_logoUni_experiencia);
   margin-right: 15px;
 }
 
@@ -250,7 +250,7 @@
   align-items: center;
   font-size: 14px;
   font-weight: 500;
-  color:#5f5f5f ;
+  color:var(--color_princip_textos) ;
 }
 
 
@@ -263,12 +263,12 @@
 .ExperienciaInfo__puntoDivisor{
   width: 2px;
   height: 2px;
-  background-color: #5f5f5f;
+  background-color: var(--color_princip_textos);
   margin: 0 5px;
 }
 
 .ExperienciaInfo__parrafo{
-  color:#5f5f5f ;
+  color:var(--color_princip_textos) ;
   margin-bottom: 10px;
 }
 
@@ -279,13 +279,13 @@
   text-decoration: none;
   align-items: center;
   font-size: 17px;
-  color: #5f5f5f;
+  color: var(--color_princip_textos);
   font-weight: 500;
 }
 
 .Estudios{
-  background-color: white;
-  padding: 35px;
+  background-color: var(--color_fondo_apartados);
+  padding: var(--padding_apartados);
   margin-bottom: 10px;
 }
 
@@ -304,15 +304,15 @@
 .Estudio__carreraEstudiada,
 .Estudio__tiempoEstudio{
   font-size: 15px;
-  color: #5f5f5f;
+  color: var(--color_princip_textos);
   font-weight: 500;
 }
 
 .Habilidades{
-  background-color: white;
+  background-color: var(--color_fondo_apartados);
   width: 100%;
   height: min-content;
-  padding: 35px;
+  padding: var(--padding_apartados);
   margin-bottom: 10px;
 }
 
@@ -328,15 +328,15 @@
   padding: 6px 18px;
   margin: 8px 5px;
   border-radius: 20px;
-  border: solid 1px #5f5f5f;
+  border: solid 1px var(--color_princip_textos);
   text-decoration: none;
   font-size: 12px;
-  color: #5f5f5f;
+  color: var(--color_princip_textos);
 }
 
 .Idiomas{
-  background-color: white;
-  padding: 35px;
+  background-color: var(--color_fondo_apartados);
+  padding: var(--padding_apartados);
 }
 
 .Idiomas__idioma{
@@ -344,14 +344,11 @@
   font-size: 12px;
   text-decoration: none;
   background-color: #e4e6eb;
-  color: #5f5f5f;
+  color: var(--color_princip_textos);
   margin: 0 5px;
 }
 
 @media(max-width:770px){
-  /* .sidebarPerfilDerecha{
-    display: none;
-  } */
 
   .containerGridPerfil{
     grid-template-columns: 1fr;
